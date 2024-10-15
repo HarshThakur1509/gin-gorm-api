@@ -1,9 +1,8 @@
 package main
 
 import (
-	"GinGorm/controllers"
-	"GinGorm/initializers"
-
+	"github.com/HarshThakur1509/gin-gorm-api/controllers"
+	"github.com/HarshThakur1509/gin-gorm-api/initializers"
 	"github.com/gin-gonic/gin"
 )
 

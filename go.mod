@@ -1,4 +1,4 @@
-module GinGorm
+module github.com/HarshThakur1509/gin-gorm-api
 
 go 1.23.2
 

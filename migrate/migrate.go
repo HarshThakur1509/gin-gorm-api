@@ -1,8 +1,8 @@
 package main
 
 import (
-	"GinGorm/initializers"
-	"GinGorm/models"
+	"github.com/HarshThakur1509/gin-gorm-api/initializers"
+	"github.com/HarshThakur1509/gin-gorm-api/models"
 )
 
 func init() {
