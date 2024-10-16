@@ -1,2 +1,2 @@
-1) CompileDaemon -command="./GinGorm"
-2) go run migrate/migrate.go
+1. CompileDaemon -command="./gin-gorm-api"
+2. go run migrate/migrate.go
