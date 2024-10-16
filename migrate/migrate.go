@@ -12,6 +12,7 @@ func init() {
 
 func main() {
 	Post := &models.Post{}
-	initializers.DB.Debug().AutoMigrate(Post)
+	User := &models.User{}
+	initializers.DB.Debug().AutoMigrate(Post, User)
 
 }
