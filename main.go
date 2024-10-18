@@ -4,6 +4,7 @@ import (
 	"github.com/HarshThakur1509/gin-gorm-api/controllers"
 	"github.com/HarshThakur1509/gin-gorm-api/initializers"
 	"github.com/HarshThakur1509/gin-gorm-api/middleware"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -13,6 +14,8 @@ func init() {
 }
 func main() {
 	r := gin.Default()
+
+	r.Use(cors.Default())
 
 	//User endpoint
 	r.POST("/signup", controllers.Signup)
