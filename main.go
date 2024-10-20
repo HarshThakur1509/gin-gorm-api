@@ -23,11 +23,12 @@ func main() {
 	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
 
 	//Post endpoint
-	r.POST("/posts", controllers.PostsCreate)
-	r.PUT("/posts/:id", controllers.PostsUpdate)
-	r.GET("/posts", controllers.PostsIndex)
-	r.GET("/posts/:id", controllers.PostsShow)
-	r.DELETE("/posts/:id", controllers.PostsDelete)
+	post := "/posts/"
+	r.POST(post, controllers.PostsCreate)
+	r.PUT(post+":id", controllers.PostsUpdate)
+	r.GET(post, controllers.PostsIndex)
+	r.GET(post+":id", controllers.PostsShow)
+	r.DELETE(post+":id", controllers.PostsDelete)
 
 	r.Run() // listen and serve on 0.0.0.0:8080
 }
